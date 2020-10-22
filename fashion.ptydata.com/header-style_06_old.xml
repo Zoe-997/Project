@@ -1,0 +1,67 @@
+<body>
+    <referenceContainer name="header.container" htmlClass="page-header header-style-06" />
+    <referenceContainer name="header-container-inner">
+        <container name="header-top" htmlId="header-top" before="-" htmlTag="div" htmlClass="header-panel-top container" />
+        <container name="header-bottom" htmlId="header-bottom" after="-" htmlTag="div" htmlClass="header-panel-bottom" />
+    </referenceContainer>
+    <referenceContainer name="header.panel">
+        <container name="header-panel-row" htmlTag="div" htmlClass="header-panel-row row" after="skip_to_content">
+            <container name="header-panel-left" htmlTag="div" htmlClass="col-sm-7 col-md-10 header-panel-left" />
+            <container name="header-panel-right" htmlTag="div" htmlClass="col-sm-17 col-md-14 header-panel-right">
+                <container name="hp-right-top" htmlTag="div" htmlClass="hp-right-top" />
+                <container name="hp-right-bottom" htmlTag="div" htmlClass="hp-right-bottom header-search-wrap" />
+            </container>
+        </container>
+    </referenceContainer>
+    <move element="header.panel" destination="header-top" />
+    
+    <move element="mobi-cart-placeholder" destination="hp-right-bottom" />
+    <move element="top.search" destination="hp-right-bottom" before="-" />
+    <move element="minicart" destination="hp-right-bottom" after="-" />
+    <referenceContainer name="hp-right-bottom">
+        <container name="hprb-links" htmlTag="ul" htmlClass="hprb-links" after="top.search" />
+    </referenceContainer>
+    <move element="wish-list-link-features" destination="hprb-links" />
+    <move element="logo" destination="header-panel-left" />
+    <move element="top.links.features" destination="hp-right-top" before="utilities.toggle.linkslist" />
+    <!--move element="utilities.toggle.linkslist" destination="hp-right-top" after="-" /-->
+    
+    
+    <referenceContainer name="hp-right-top">
+        <block class="Magento\Store\Block\Switcher" name="footer-switch-language" template="Magento_Store::switch/languages-style-02.phtml" />
+        <block class="Magento\Directory\Block\Currency" name="footer-switch-currency" template="Magento_Directory::currency-style-02.phtml" />
+    </referenceContainer>
+    <referenceBlock name="utilities.sidebar.right">
+        <action method="setData">
+            <argument name="name" xsi:type="string">required_blocks</argument>
+            <argument name="value" xsi:type="array">
+                <item name="getAccountPanelStyle" xsi:type="string">utilities.content</item>
+                <item name="getHeaderWishlistStyle" xsi:type="string">wishlist-sidebar</item>
+                <item name="getMiniCartStyle" xsi:type="string">minicart-sidebar</item>
+                <!--item name="getLeftMenuStyle" xsi:type="string">header-links-list</item-->
+            </argument>
+        </action>
+    </referenceBlock>
+    <!--referenceBlock name="utilities.sidebar.left">
+        <action method="setData">
+            <argument name="name" xsi:type="string">required_blocks</argument>
+            <argument name="value" xsi:type="boolean">0</argument>
+        </action>
+    </referenceBlock>
+    <referenceBlock name="utilities.toggle.linkslist">
+        <action method="setData">
+            <argument name="name" xsi:type="string">direction</argument>
+            <argument name="value" xsi:type="string">right</argument>
+        </action>
+    </referenceBlock-->
+    <referenceBlock name="header-contact-link" remove="true" />
+    <referenceBlock name="top.links">
+        <action method="setData">
+            <argument name="name" xsi:type="string">css_class</argument>
+            <argument name="value" xsi:type="string">header links visible-xs</argument>
+        </action>
+    </referenceBlock>
+    <move element="catalog.topnav" destination="header-bottom" before="-" />
+
+    <move element="store-menu-placeholder" destination="store.menu" />
+</body>

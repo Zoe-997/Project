@@ -1,0 +1,21 @@
+fort-standard-studio
+furniture
+lighting
+limited
+contact
+profile
+product-view
+press
+blog
+
+
+
+fs object
+shop-object-view
+shop-object-new
+shop-object-favorites
+shop-object-customize
+shop-object-studio
+shop-object-contact
+shop-object-positions
+checkout

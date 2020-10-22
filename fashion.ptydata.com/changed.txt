@@ -1,0 +1,18 @@
+We created the new megamenu in admin with id: unlimited-fashion-main-menu-aloteam.
+Cpanel => cazadon => Megamenu Drag&Drop => Megage Megamenu => unlimited-fashion-main-menu-aloteam.
+
+style for new megamenu we added in Header style 06:
+Cpanel => cazadon => flexible theme => header => header-style-06 => Font/Color Variables => Extra Customization => Custom CSS Code
+
+Change main menu
+Cpanel => cazadon => flexible theme => setting => theme configuration => header => Select Main Menu : unlimited-fashion-main-menu-aloteam.
+
+
+About color you can change in:
+Cpanel => cazadon => flexible theme => header => header-style-06 => Font/Color Variables
+                                       footer => footer-style-02 => Font/Color Variables
+                                       main content => main-content-style-04 => Font/Color Variables
+
+Also, We can't access to some pages in your website. Example : login, checkout and rtl. You can check in they, please.
+Please watch image: http://prntscr.com/tqaq0e.
+

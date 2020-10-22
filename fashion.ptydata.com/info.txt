@@ -1,0 +1,50 @@
+These are the access for the magento admin and ssh, remember that we made 2 magento installations in the same server, 1 Magento with Theme (outdoor.ptydata.com), 2 Magento with full installation theme (fashion.ptydatta.com)
+
+https://fashion.ptydata.com/admin_infinity
+user: david
+pass: Panama2020
+
+SSH root
+207.244.249.185
+Username: root
+Password: 5fQ8VTNovL2Bj
+
+Magento User (root)
+Username: outdoor
+Password: 5VuHPzptE74V4L
+
+We use nginx with varnish ssl 
+Remember always restar the varnish with systemctl restart varnish
+
+If you have any question please send them to me and Alexander,
+Attached the logo.
+
+systemctl restart varnish =====> 
+
+color code need to change:
+#a07653 -> #a2d40a
+#cf640b -> #431266
+menu: #ff8000
+
+01/09/2020
+OLD PAGE:
+path: /home/outdoor_fashion/public_html
+Username: outdoor
+C4mSpKgwHcCjKC
+
+or you can use this
+Username: fashion
+Password: TdpszmrUXuUG4s
+
+NEW PAGE:
+SSH:
+https://infinit.ptydata.com/
+/home/infinit/public_html
+Username: infinit
+Password: HHBy69LqNMkTVV
+
+
+Admin:
+https://infinit.ptydata.com/admin_infinit
+user: alotheme
+pass: ^PNuTAB}R9

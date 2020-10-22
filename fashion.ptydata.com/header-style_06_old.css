@@ -1,0 +1,59 @@
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu{
+text-align:left;
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site{
+margin-right:157px;
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site>a.menu-link{
+padding:15px 0;
+}
+
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site>a.menu-link i{
+    margin-right: 0;
+    margin-left: 3px;
+    font-size: 20px;
+    float: right
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site .groupmenu-drop>li.item{
+    min-width: 175px;
+    padding: 0;
+    width: 175px;
+    overflow: hidden;
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site .groupmenu-drop>li .item{
+  margin-bottom:0;
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site .groupmenu-drop>li .item a img{
+  filter:grayscale(1);
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site .groupmenu-drop>li.item a{
+display:block;
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site .groupmenu-drop>li.item a:hover{
+background-color:#eeeeee;
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site .groupmenu-drop>li.item a:hover img{
+  filter:grayscale(0);
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0.our-site .groupmenu-drop{
+  box-shadow:none;
+}
+@media(max-width: 1479px){
+  .cdz-horizontal-menu{
+    padding:0 15px;
+  }
+}
+@media(max-width: 767px){
+.cdz-menu .item.level-top.our-site>.menu-link i{
+  display:none;
+}
+}
+.minicart-wrapper .action.showcart .counter.qty{
+background:#ff8000;
+}
+.page-header .header-panel-bottom .cdz-navigation .cdz-horizontal-menu .groupmenu li.item.level0>a.menu-link{
+height:48px;
+}
+.ui-slider-handle{
+background:#431266;
+}

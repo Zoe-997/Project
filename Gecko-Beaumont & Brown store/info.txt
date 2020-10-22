@@ -1,0 +1,33 @@
+https://m2-beaumontbrown.icecomms-server.co.uk/secure-admin
+aloteam/aloteam@123
+
+For SSH access here is the cPanel login
+https://viola.ldn.kualo.net:2083/frontend/paper_lantern/index.html?login=1&
+post_login=35750932834190
+username: icecomms
+password: painter1962
+
+FTP: I have updated the password.
+FTP Host: ftp.icecomms-server.co.uk <http://ftp.icecomms-server.co.uk/>
+Folder: m2-beaumontbrown.icecomms-server.co.uk
+FTP User: icecomms
+FTP Pass: painter1962
+
+
+
+
+
+Homepage Layout: (please see attached design)
+1.	Header and Menu Design from GECKO Organic
+2.	Slider from Gecko Furniture 3
+3.	Feature Boxes from Gecko 4
+4.	Reviews – I’ll stream these in
+5.	Featured Look from Gecko Furniture 3
+6.	Featured Range from Gecko Furniture 3
+7.	Full width banner with caption from Gecko Furniture 3
+8.	Shop Brand from Gecko Furniture 3
+9.	2nd full width banner without caption from Gecko Furniture 3
+10.	Shipping, Support, Returns and Secure messages from Gecko 10
+11.	Footer from Gecko 10  
+
+https://preview.themeforest.net/item/gecko-responsive-magento-2-theme-rtl-supported/full_screen_preview/24677410?_ga=2.190343275.110585292.1581470143-438198009.1579087781
