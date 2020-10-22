@@ -1,0 +1,33 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 02/06/2020 06:32
+  	*/
+
+@font-face {
+  font-family: "reorder";
+  src: url("./reorder.eot");
+  src: url("./reorder.eot?#iefix") format("embedded-opentype"),
+       url("./reorder.woff2") format("woff2"),
+       url("./reorder.woff") format("woff"),
+       url("./reorder.ttf") format("truetype"),
+       url("./reorder.svg#reorder") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "reorder";
+    src: url("./reorder.svg#reorder") format("svg");
+  }
+}
+
+[class^="reorder-"]:before, [class*=" reorder-"]:before,
+[class^="reorder-"]:after, [class*=" reorder-"]:after {   
+  font-family: reorder;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.reorder-shopping:before { content: "\f100"; }

@@ -1,0 +1,22 @@
+I tested few email today morning for email templates and please find below feedback. 
+I am give some of the examples to give you idea on what's needed but apply that across email wherever applicable.
+
+1. Font's needs to be streamlined. If you inspect whole email, you would notice there are two fonts used. 
+Tahoma and Arial. It should use single font across email to be uniform across the email, including footer.
+Example: Footer, order information are in Arial and rest is in Tahoma.
+
+2. Font size for text is different so
+Title "Invoice Information" is 13px 
+whereas "Billing Info, Shipping Info, Payment Method, Shipping Method" is 12px.
+Informational text like Order No is 12px but order information is 14px
+
+3. Font color seems to be different as well. Not sure if font size and font type is causing that but please check.
+
+4. Two separator after Need Help which should be just one separator.
+
+5. I think you update New Order template with Invoice information but that would be easy fix once formatting is finalized.
+
+6. I think you made changes just for Order template as Footer doesn't show up correctly on other emails like . Invoice, Credit Memo, Welcome, New Subscription, etc
+
+Besides, let me know if rest of email templates will have same formatting with fonts, font size and color ? 
+I assume you would make final changes to email css which apply to all emails to keep same formatting.

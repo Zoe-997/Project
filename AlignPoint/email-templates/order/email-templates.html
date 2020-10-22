@@ -1,0 +1,58 @@
+{{template config_path="design/email/header_template"}}
+<div class="email-templates">
+    <div class="top-email">
+        <h3 class="welcome">{{trans "Hello %customer_name" customer_name=$order_data.customer_name}}</h3>
+        <p class="title">Thank you for shopping at our store! Please find below your invoice information and a copy attached. You can always access your orders and invoices from your My Account.</p>
+    </div>
+    <div class="content-email">
+        <h3 class="title">{{trans "INVOICE INFORMATION"}}</h3>
+        <div class="infomation-email">
+            <div class="order">
+                <div class="id-order order-item">
+                    <h3>{{trans 'Order No: <span class="no-link">%increment_id</span>' increment_id=$order.increment_id |raw}}</h3>
+                </div>
+                <div class="date-order order-item">
+                    <h3>{{trans 'Placed on: <span class="no-link">%created_at</span>' created_at=$created_at_formatted |raw}}</h3>
+                </div>
+            </div>
+            <div class="bill-ship">
+                {{depend order_data.email_customer_note}}
+                <div class="message-info">
+                    {{var order_data.email_customer_note|escape|nl2br}}
+                </div>
+                {{/depend}}
+                <div class="address-details">
+                    <h3 class="title">{{trans "Billing Info"}}</h3>
+                    <p class="info">{{var formattedBillingAddress|raw}}</p>
+                </div>
+                {{depend order_data.is_not_virtual}}
+                <div class="address-details">
+                    <h3 class="title">{{trans "Shipping Info"}}</h3>
+                    <p class="info">{{var formattedShippingAddress|raw}}</p>
+                </div>
+                {{/depend}}
+            </div>
+            <div class="method">
+                <div class="method-info">
+                    <h3 class="title">{{trans "Payment Method"}}</h3>
+                    {{var payment_html|raw}}
+                </div>
+                {{depend order_data.is_not_virtual}}
+                <div class="method-info">
+                    <h3 class="title">{{trans "Shipping Method"}}</h3>
+                    <p class="info">{{var order.shipping_description}}</p>
+                    {{if shipping_msg}}
+                    <p class="info">{{var shipping_msg}}</p>
+                    {{/if}}
+                </div>
+                {{/depend}} {{layout handle="sales_email_order_items" order=$order area="frontend"}}
+            </div>
+        </div>
+    </div>
+    <div class="bottom-email">
+        <div class="title">{{trans "NEED HELP?"}}</div>
+        <div class="text"> {{trans "Contact Us and we would be happy to answer any questions you may have."}}</div>
+        <div class="email-line"></div>
+    </div>
+</div>
+{{template config_path="design/email/footer_template"}}

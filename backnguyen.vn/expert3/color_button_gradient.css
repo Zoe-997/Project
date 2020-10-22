@@ -1,0 +1,21 @@
+.item .actions-cart .button.btn-cart,.home-slider .slick-slide.slick-active .figcaption .btn-shop,#popup-newsletter .block-content button.button,.block-subscribe .actions button.button,.block-content-statick .hotline .call-Us-Now,.page-header .header .content-shipping a,.promotion .content-promotion a,.item .add-to-links a:hover,.product-view .add-to-cart button.button,.footer-contact .actions-toolbar .primary .action{
+	background: -webkit-linear-gradient(90deg, #f0c049 0%, #fbdd99 100%);
+	background: -moz-linear-gradient(90deg, #f0c049 0%, #fbdd99 100%);
+	background: -o-linear-gradient(90deg, #f0c049 0%, #fbdd99 100%);
+	background: -ms-linear-gradient(90deg, #f0c049 0%, #fbdd99 100%);
+	background: linear-gradient(0deg, #f0c049 0%, #fbdd99 100%);
+}
+.home-slider .slick-slide.slick-active .figcaption .btn-shop:hover{
+	background: -webkit-linear-gradient(90deg, #445268 100%, #445268 100%);
+	background: -moz-linear-gradient(90deg, #445268 100%, #445268 100%);
+	background: -o-linear-gradient(90deg, #445268 100%, #445268 100%);
+	background: -ms-linear-gradient(90deg, #445268 100%, #445268 100%);
+	background: linear-gradient(0deg, #445268 100%, #445268 100%);
+}
+.item .actions-cart .button.btn-cart:hover,#popup-newsletter .block-content button.button:hover,.block-subscribe .actions button.button:hover,.block-content-statick .hotline .call-Us-Now:hover,.page-header .header .content-shipping a:hover,.promotion .content-promotion a:hover,.product-view .add-to-cart button.button:hover, .footer-contact .actions-toolbar .primary .action:hover{
+	background: -webkit-linear-gradient(90deg, #fbdd99 0%, #f0c049 100%);
+	background: -moz-linear-gradient(90deg, #fbdd99 0%, #f0c049 100%);
+	background: -o-linear-gradient(90deg, #fbdd99 0%, #f0c049 100%);
+	background: -ms-linear-gradient(90deg, #fbdd99 0%, #f0c049 100%);
+	background: linear-gradient(0deg, #fbdd99 0%, #f0c049 100%)
+}

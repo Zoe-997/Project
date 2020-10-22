@@ -1,0 +1,23 @@
+ADMIN LINK:
+https://8609c0164c.nxcli.net/a60e521150_admin/admin/index/index/key/e60849d195b84e47032a518e56f9e6006c0436d7f6f87d9a84b56e76312697ed/
+
+ADMIN USER:
+admin
+
+ADMIN PASS:
+Romped90Frat89Sifted39Quoted42
+
+
+Hostname:
+8609c0164c.nxcli.net
+Port:
+22
+Username:
+abcc9267_1
+
+password: SnaredBelledClewStags
+
+
+composer require avalara/avatax-magento:1.5.0
+
+website shopify: https://gameexchange.biz/

@@ -1,0 +1,38 @@
+Magento Admin Access:
+URL: http://208.75.74.249/admin
+Username: aloadmin
+Password: dcVCPp3w9U
+
+Magento Client User:
+URL:http://208.75.74.249/
+Username: test1@test.com
+Password: T3st@123
+
+SSH Access:
+Host: 208.75.74.249
+Username: aloadmin
+Password: SSH Key Authentication. Attached.
+
+
+http://208.75.74.249/
+file:///D:/project/AlignPoint/beefree-stbgvyuubf.html
+
+
+information 4/5/2020:
+Server: 15.223.61.146
+user: magento_user
+Keyfile attached.
+
+Admin : 
+magento_user.ppk1.4 kb
+User: vendor/admin
+Pass: ALOpass13/admin@123
+
+information 5/5/2020:
+Magento Admin Access: http://15.223.61.146/admin
+Username: aloadmin
+Password: dcVCPp3w9U
+
+Magento Client User:
+Username: test1@test.com
+Password: T3st@123

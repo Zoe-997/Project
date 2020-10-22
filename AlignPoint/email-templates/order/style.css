@@ -1,0 +1,182 @@
+.top-email{
+    text-align: center;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.top-email .welcome{
+    font-size: 16px!important;
+    font-weight: 700!important;
+    color: #000;
+}
+.top-email p.title{
+    font-size: 14px;
+    color: #000;
+    word-break: break-word;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+
+.content-email > h3.title{
+    color: #555555;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    padding: 10px;
+    font-size: 13px!important;
+    font-weight: 700!important;
+    background-color: #eef0f1;
+    text-align: center;
+    line-height: 25px!important;
+    margin: 0 !important;
+}
+.infomation-email .order .order-item{
+    width: 50%;
+    float: left;
+}
+.infomation-email .order .order-item h3{
+    font-size: 12px!important;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700!important;
+    color: #555555;
+    padding: 10px;
+    line-height: 25px!important;
+    margin: 0 !important;
+}
+.infomation-email .order .order-item span{
+    font-weight: 400;
+}
+.infomation-email .order{
+    overflow-y: hidden;
+}
+.infomation-email .bill-ship{
+    overflow-y: hidden;
+}
+.infomation-email .bill-ship .address-details{
+    width: 50%;
+    float: left;
+}
+.infomation-email .bill-ship .title{
+    font-size: 13px !important;
+    text-transform: uppercase;
+    font-weight: 700!important;
+    color: #555555;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    padding: 10px;
+    background-color: #eef0f1;
+    line-height: 25px!important;
+    margin: 0 !important;
+}
+.infomation-email .bill-ship .info{
+    padding: 15px 10px;
+    font-size: 12px;
+    margin: 0 !important;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+.infomation-email .method{
+    overflow-y: hidden;
+}
+.infomation-email .method .method-info{
+    width: 50%;
+    float: left;
+}
+.infomation-email .method  h3.title{
+    font-size: 13px !important;
+    text-transform: uppercase;
+    font-weight: 700!important;
+    color: #555555;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    padding: 10px;
+    background-color: #eef0f1;
+    line-height: 25px!important;
+    margin: 0 !important;
+}
+.infomation-email .method dl{
+    padding: 20px 10px;
+    margin-bottom: 0!important;
+
+}
+.infomation-email .method dl .title,
+.infomation-email .method dl strong{
+    font-weight: 400!important;
+    color: #555555;
+}
+.infomation-email .method .info{
+     padding: 15px 10px;
+    font-size: 14px;
+    margin: 0 !important;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+.bottom-email{
+    text-align: center;
+    padding-top: 35px;
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #000;
+}
+.bottom-email .title{
+    line-height: 1.2;
+    word-break: break-word;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #555555;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.bottom-email .text{
+    line-height: 1.2;
+    word-break: break-word;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color: #555555;
+}
+.bottom-email .email-line{
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #000;
+    height: 30px;
+    margin-top: 25px;
+}
+
+.email-footer{
+    padding-top: 55px!important;
+    text-align: center;
+}
+.email-footer ul{
+    list-style: none;
+    overflow-y: hidden;
+    margin-top: 20px!important;
+    margin-bottom: 0!important;
+    padding-left: 0;
+}
+.email-footer ul li{
+    display: inline-block;
+    width: 33.3333%;
+    float: left;
+    margin: 0 !important
+}
+.email-footer ul li a{
+    display: block;
+    border-right: 1px solid #555555;
+    color: #555555!important;
+    font-size: 12px;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+.email-footer ul .policy a{
+    text-align: left;
+}
+.email-footer ul .contact a{
+    border-right: 0;
+    font-size: 14px;
+    margin-right: 0;
+}
+.email-header{
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+.email-order-template{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
