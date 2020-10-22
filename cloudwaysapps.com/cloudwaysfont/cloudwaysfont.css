@@ -1,0 +1,45 @@
+	/*
+  	Cloudways icon font: Cloudways
+  	Creation date: 07/10/2020 11:22 (GMT+7)
+  	*/
+
+@font-face {
+  font-family: "Cloudways";
+  src: url("./Cloudways.eot");
+  src: url("./Cloudways.eot?#iefix") format("embedded-opentype"),
+       url("./Cloudways.woff2") format("woff2"),
+       url("./Cloudways.woff") format("woff"),
+       url("./Cloudways.ttf") format("truetype"),
+       url("./Cloudways.svg#Cloudways") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Cloudways";
+    src: url("./Cloudways.svg#Cloudways") format("svg");
+  }
+}
+
+[class^="cloudways-"]:before, [class*=" cloudways-"]:before,
+[class^="cloudways-"]:after, [class*=" cloudways-"]:after {   
+  font-family: Cloudways;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.cloudways-next:before { content: "\f100"; }
+.cloudways-back:before { content: "\f101"; }
+.cloudways-cancel:before { content: "\f102"; }
+.cloudways-refresh:before { content: "\f103"; }
+.cloudways-close:before { content: "\f104"; }
+.cloudways-searching-magnifying-glass:before { content: "\f105"; }
+.cloudways-check-symbol:before { content: "\f106"; }
+.cloudways-check-box:before { content: "\f107"; }
+.cloudways-favorite-heart-button:before { content: "\f108"; }
+.cloudways-notifications-button:before { content: "\f109"; }
+.cloudways-download-button:before { content: "\f10a"; }
+.cloudways-menu:before { content: "\f10b"; }
+.cloudways-menu-1:before { content: "\f10c"; }

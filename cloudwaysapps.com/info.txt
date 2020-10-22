@@ -1,0 +1,8 @@
+Hello!SFPT
+IP: 142.93.150.238:22
+Login: milano
+Pass: Alomilano123
+
+now its okLogin Magento
+User: alomilano
+Pass: Alomilano123

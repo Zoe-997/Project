@@ -1,0 +1,9 @@
+SSH IP : 162.241.222.225
+User name: root
+pwd: FlV6Gde1ZP$^
+
+PHP Path as below:-
+/var/www/vhosts/costless.ae/httpdocs
+
+http://costless.ae/admin/
+admin/P@ssword123

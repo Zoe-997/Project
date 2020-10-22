@@ -1,0 +1,18 @@
+/var/www/vhosts/costless.ae/httpdocs/app/design/frontend/Alothemes/market6/Magento_Theme/templates/html/header.phtml
+
+/var/www/vhosts/costless.ae/httpdocs/app/design/frontend/Alothemes/market6/Magento_Customer/layout/customer_account_login.xml
+
+/var/www/vhosts/costless.ae/httpdocs/app/design/frontend/Alothemes/market6/Magento_Customer/layout/customer_account_create.xml
+
+/app/design/frontend/Alothemes/market6/Magento_Customer/templates/form/login.phtml
+
+/app/design/frontend/Alothemes/market6/Magento_Customer/templates/form/register.phtml
+
+/var/www/vhosts/costless.ae/httpdocs/app/design/frontend/Alothemes/market6/Magento_Customer/templates/widget/name.phtml
+
+
+Change in admin:
+Content => block => Block Footer - Contact - help - Usefull - secure payments
+				 => Header logout
+				 => Header login
+
