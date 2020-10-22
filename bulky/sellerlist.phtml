@@ -1,0 +1,323 @@
+<!-- /home/bulky/public_html/app/code/Webkul/Marketplace/view/frontend/templates -->
+<?php
+/**
+ * Webkul Software.
+ *
+ * @category  Webkul
+ * @package   Webkul_Marketplace
+ * @author    Webkul
+ * @copyright Copyright (c) Webkul Software Private Limited (https://webkul.com)
+ * @license   https://store.webkul.com/license.html
+ */
+
+// @codingStandardsIgnoreFile
+// $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+// $customer = $objectManager->get('Magento\Customer\Model\ResourceModel\Customer\Collection');
+// $array_email = [];
+// foreach ($customer as $value) {
+// 	$array_email[] = $value->getData('email');
+// }
+
+$helper = $this->helper('Webkul\Marketplace\Helper\Data');
+$banner_display 	= 	$helper->getDisplayBanner();
+$banner_image 		= 	$helper->getBannerImage();
+$banner_content 	= 	$helper->getBannerContent();
+$marketplacebutton 	= 	$helper->getMarketplacebutton();
+$sellerlist_top_label 		= 	$block->escapeHtml($helper->getSellerlisttopLabel());
+$sellerlist_bottom_label 	= 	($helper->getSellerlistbottomLabel());
+$paramData = $this->getRequest()->getParams();
+if (!isset($paramData['shop'])) {
+	$paramData['shop'] = '';
+}
+$sellerAccountUrl = $block->getUrl(
+	'marketplace/account/becomeseller',
+	["_secure" => $this->getRequest()->isSecure()]
+);
+if (!$helper->isCustomerLoggedIn()) {
+	$sellerAccountUrl = $block->getUrl(
+		'customer/account/create',
+		["_secure" => $this->getRequest()->isSecure()]
+	);
+}
+?>
+
+<div class="wk-mp-design wk-mp-landingpage">
+	<?php
+	if($banner_display){?>
+		<div class="wk-mp-banner-container">
+			<div class="wk-mp-banner">
+				<div class="wk-mp-header">
+					<h1><?php echo $marketplacebutton; ?></h1>
+					<h2>
+						<?php echo $block->getCmsFilterContent($banner_content)?>
+					</h2>
+					<p>
+						<a href="<?php echo $block->getUrl('marketplace/account/becomeseller/', ['_secure' => $this->getRequest()->isSecure()]); ?>">
+							<button class="button wk-mp-landing-button">
+								<span>
+									<span>
+										<strong><?php echo $marketplacebutton; ?></strong>
+									</span>
+								</span>
+							</button>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	<?php
+	} ?>
+	<!-- //  // -->
+
+	<h1 class="wk-marketplace-label"><?php echo $sellerlist_top_label ?></h1>
+
+	<div clas="wk-srach-wrapper">
+		<form method="get" action="<?php echo $block->getUrl('marketplace/seller/sellerlist', ['_secure' => $this->getRequest()->isSecure()])?>" id="search_mini_form" class="wk-search" style="padding: 0px 20%;">
+			<div class="control">
+		        <input id="sellersearch" type="search" name="shop" value="<?php echo $paramData['shop']?>" class="input-text required-entry" maxlength="128" placeholder="<?php echo __('Search sellers by shop name from here')?>..." autocomplete="off" style="width:100%;border:1px solid #ccc;float:left;">
+		        <button type="submit" title="Search" class="button"><span class="span"><span><?php echo __('Search') ?></span></span></button>
+		    </div>
+		</form>
+	</div>
+
+	<!-- //  // -->
+
+	<div class="wk-mp-sellerlist-container" style="display:inline-block;padding: 0;padding-top: 20px;width: 100%;">
+		<?php
+		if(count($block->getSellerCollection())==0){ ?>
+			<div class="wk-emptymsg">
+				<?php echo __('No Seller Available') ?>
+			</div>
+			<?php
+		} else{?>
+			<ul>
+				<?php
+				foreach($block->getSellerCollection() as $seller_coll){
+
+					$featured = $seller_coll->getData('featured');	
+					$id = $seller_coll->getData('entity_id');	
+					$rating = $helper->getSelleRating($id);
+					$phone = $seller_coll->getData('contact_number');
+					$seller_id = $seller_coll->getSellerId();
+					$seller_product_count = 0;
+					$profileurl = $seller_coll->getShopUrl();
+					$shoptitle = '';
+					$logo="noimage.png";
+					$seller_product_count = $helper->getSellerProCount($seller_id);
+					$shoptitle = $seller_coll->getShopTitle();
+					$logo=$seller_coll->getLogoPic()==''?"noimage.png":$seller_coll->getLogoPic();
+					$image_store=$seller_coll->getImageStore()==''?"noimage.png":$seller_coll->getImageStore();
+					if(!$shoptitle){
+						$shoptitle = $profileurl;
+					}
+					$logo=$helper->getMediaUrl().'avatar/'.$logo;
+					$image_store=$helper->getMediaUrl().'avatar/'.$image_store;
+					?>
+			    	<li>
+			    		<div class="wk-item-info">
+			    			<div class="wk-mp-sellerlist-wrap" style="background-image: url('<?php echo $image_store ?>')">
+			    				<div class="wk-sellerlist-divide1">
+			    					<a href="<?php echo $helper->getRewriteUrl('marketplace/seller/profile/shop/'.$profileurl);?>" title="<?php echo __("View Seller's Shop") ?>"><img src="<?php echo $logo ?>"></a>
+			    				</div>
+			    				<div class="wk-sellerlist-divide2">
+			    					<?php if($featured == 'yes') : ?>
+			    						<p>featured</p>
+			    					<?php endif ?>
+
+			    					<div>
+			    						<a class="wk-name-shop" href="<?php echo $helper->getRewriteUrl('marketplace/seller/profile/shop/'.$profileurl);?>" title="<?php echo __("View Seller's Shop") ?>">
+			    							<strong><?php echo $block->escapeHtml($shoptitle) ?></strong>
+			    						</a>
+			    					</div>
+
+			    					<div class="rating-summary">
+			    						<span style="width:80%;"></span>
+			    					</div>
+
+
+			    					<?php if(!empty($phone)) : ?>
+			    						<div class="wk-phone-number">
+			    							<i class="fa fa-phone"><?php echo $phone;?></i>
+			    						</div>
+			    					<?php endif ?>
+
+			    					<div class="wk-product-number"><?php echo __('%1 Total Products',$seller_product_count) ?></div>
+			    				</div>
+			    			</div>
+			    			<a href="<?php echo $helper->getRewriteUrl('marketplace/seller/collection/shop/'.$profileurl);?>">
+			    				<button class="button" title="<?php echo __("View Seller's Collection") ?>">
+			    					<span>
+			    						<span>
+			    							<?php echo __('View All'); ?>
+			    						</span>
+			    					</span>
+			    				</button>
+			    			</a>
+					</div>
+					</li>
+			    	<?php
+			    }?>
+		    </ul>
+		    <?php
+		}?>
+	</div>
+
+	<!-- //          // -->
+
+
+	<?php if ($block->getPagerHtml()): ?>
+        <div class="order-products-toolbar toolbar bottom"><?php echo $block->getPagerHtml(); ?></div>
+    <?php endif ?>
+
+    <h1 class="wk-marketplace-label"><?php echo $sellerlist_bottom_label ?></h1>
+
+	<a href="<?php echo $sellerAccountUrl?>">
+		<button class="button wk-mp-landing-button">
+			<span>
+				<span>
+					<strong><?php echo $marketplacebutton; ?></strong>
+				</span>
+			</span>
+		</button>
+	</a>
+</div>
+
+
+<script>
+    require([
+        "jquery",
+        "mage/mage",
+    ], function($){
+		$('.page-title-wrapper').hide();
+		$('.wk-mp-banner').css('background-image','url("<?php echo $banner_image ?>")');
+    });
+</script>
+
+<style type="text/css">
+	.wk-mp-sellerlist-container ul{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.wk-mp-sellerlist-container li{
+		flex: 1;
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-right: 0;
+	}
+	.wk-mp-sellerlist-container li .wk-item-info{
+		background: #fafafa;
+		box-shadow: 0 0 5px #dddddd;
+		overflow: hidden;
+	}
+	.wk-mp-sellerlist-container .wk-mp-sellerlist-wrap{
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		padding: 10px;
+		min-height: 200px;
+	}
+	.wk-mp-sellerlist-container .wk-mp-sellerlist-wrap:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: #000000;
+		opacity: 0.3;
+	}
+	.wk-sellerlist-divide1{
+		width: 80px;
+		height: 80px;
+		border: 4px solid #ffffff;
+		border-radius: 50%;
+		position: absolute;
+		bottom: -40px;
+		right: 20px;
+		background: #ffffff;
+	}
+	.wk-sellerlist-divide1 img{
+		width: 100%;
+		height: 100%;
+	}
+	.wk-sellerlist-divide2{
+		width: 100%;
+		position: relative;
+	}
+	.wk-sellerlist-divide2 > p{
+		font-size: 1.6rem;
+		background: #2d54a3;
+		padding: 2px 10px;
+		color: #ffffff;
+		display: inline-block;
+		text-transform: capitalize;
+		margin: 10px 0;
+		border-radius: 5px;
+	}
+	.wk-sellerlist-divide2 .wk-name-shop{
+		margin: 9px 0;
+		padding: 0;
+		font-size: 20px;
+		color: #ffffff;
+		text-transform: capitalize;
+	}
+	.wk-sellerlist-divide2 .wk-phone-number{
+		font-size: 2rem;
+		color: #ffffff;
+	}
+	.wk-sellerlist-divide2 .wk-phone-number .fa-phone:before{
+		margin-right: 5px;
+	}
+	.wk-sellerlist-divide2 .wk-product-number{
+		font-size: 1.7rem;
+		color: #ffffff;
+		text-transform: capitalize;
+	}
+	.wk-mp-sellerlist-container li .wk-item-info > a{
+		float: left;
+		margin: 20px 10px;
+	}
+	.wk-mp-sellerlist-container li .wk-item-info > a button{
+		height: 30px;
+		line-height: 30px;
+		padding: 0px 15px;
+	}
+	.rate:not(:checked) > input {
+		position:absolute;
+		top:-9999px;
+	}
+
+	.rating-summary{
+		position: relative;
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	.rating-summary:before,
+	.rating-summary span:after{
+		font-size: 2rem;
+		height: 16px;
+		display: block;
+		line-height: 16px;
+	}
+	.rating-summary span{
+		display: block;
+		overflow: hidden;
+	}
+	.rating-summary:before{
+		content: "★★★★★";
+		z-index: 1;
+		position: absolute;
+	}
+	.rating-summary span:after{
+		content: "★★★★★";
+		color: #fa9a00;
+		position: relative;
+		z-index: 1;
+	}
+
+</style>

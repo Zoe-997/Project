@@ -1,0 +1,59 @@
+Cpanel credentials: same for ssh
+https://bulky.ae:2083
+UN: bulky
+PWD: Ramya@1991
+
+
+FTP Details:
+
+FTP Username: alo@bulky.ae
+
+FTP Password: Alo@2019
+
+FTP server: ftp.bulky.ae
+
+FTP & explicit FTPS port: 21
+
+
+
+Magento Admin Details:
+
+URL:http://bulky.ae/admin
+
+UserName:admin
+
+Password: admin@123$#
+
+
+
+I'm sorry I think it still looks misaligned, the logo is lower than search bar, or search bar too much up.
+
+====> changed in file /home/bulky/public_html/app/design/frontend/Alothemes/expert2/web/css/style.css
+
+- All buttons in yellow around the website to be changed to the grey color code in the attached windows button.
+- attached image (capture3): the "go top" button should also be grey.
+- attached image (capture4): when you change it to grey please watch out for the edges and borders of each button as I still see yellow frame, so it can be darker grey maybe a little to show button is highlighted.
+
+====> changed color in admin
+
+- Can you please fix the cart issue so when adding to it does not squish menu like mentioned above and you can remove the AED total amount, I think bubble number is enough to indicate total order count.
+
+====> change file /home/bulky/public_html/app/design/frontend/Alothemes/expert2/Magento_Checkout/templates/cart/minicart.phtml
+
+- attached image (capture7): can you rename button please to "Negotiate Price" and make it aligned the text because it seems lowered.
+====> not find
+
+About text, you can change it in file:
+/home/bulky/public_html/app/design/frontend/Alothemes/expert1/Magento_Newsletter/templates/subscribe-popup.phtml
+--> For text, please see attached (Capture1), I put numbers on picture and will reference below:
+- circle 1: please replace "Welcome to Expert" with "Welcome to Bulky.ae" and you can use my logo on main page instead of the word 'Bulky.ae'.
+- circle 2: please remove discount sentence.
+- circle 3: use text "to receive more about latest bulk items for sale, please enter your email below to join the newsletter".
+- circle 4: please remove text.
+- keep option for "Don't show this popup again".
+
+====> changed in file /home/bulky/public_html/app/design/frontend/Alothemes/expert1/Magento_Newsletter/templates/subscribe-popup.phtml.
+
+--> Can you please upload one image as we are unable to change the provided one for the About Us placeholder image? I have attached the image (About-US.jpg) and you can use this to replace the image in https://bulky.ae/about-us
+
+====> changed image /home/bulky/public_html/pub/media/wysiwyg/alothemes/cms/about-us.jpg

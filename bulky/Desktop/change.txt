@@ -1,0 +1,16 @@
+
+Thank you for quick fix, however there are many things still missing.
+
+Many buttons still are yellow around the website, can you please go through pages and see what is still yellow? 
+for example, Contact, Blog, Cart box are all still yellow, even Deal of the Day side buttons are yellow.
+====> changed color in admin
+
+
+Search bar still not aligned correctly, please check screenshots attached.
+====> changed in file /home/bulky/public_html/app/design/frontend/Alothemes/expert2/web/css/style.css
+
+Capture1: Can you change the words to lowercase in BULKY.AE to Bulky.ae?
+====> changed in file /home/bulky/public_html/app/design/frontend/Alothemes/expert1/Magento_Newsletter/templates/subscribe-popup.phtml.
+
+
+Capture4: these are not sellers link they are brands, can we make them sellers that are featured?

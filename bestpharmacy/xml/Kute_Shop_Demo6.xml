@@ -1,0 +1,16 @@
+<!-- Block Sectionscontent-->
+<referenceContainer name="alo.sectionscontent">
+			<block class="Magento\Cms\Block\Block" name="sectionscontent">
+				<arguments>
+					<argument name="block_id" xsi:type="string">block-sectionscontent</argument>
+				</arguments>
+			</block>
+</referenceContainer>
+<!-- Block Sectionsbottom-->
+<referenceContainer name="alo.sectionsbottom">
+			<block class="Magento\Cms\Block\Block" name="sectionsbottom">
+				<arguments>
+					<argument name="block_id" xsi:type="string">block-sectionsbottom</argument>
+				</arguments>
+			</block>
+</referenceContainer>

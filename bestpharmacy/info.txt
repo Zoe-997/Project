@@ -1,0 +1,28 @@
+SSH/SCP
+IP: 51.91.51.27
+username: aloteam
+password: cErIPaRksheMAD
+
+home path: /home/aloteam/
+eshop path: /home/www/bestmage2-theme.bestpharmacy.gr/public_html/
+
+PHPMYADMIN:
+IP: 51.91.51.27/phpmyadmin
+Username: mtheme
+password: yj3FAEdYVaPYW2YkDfzW
+database: mtheme
+
+Eshop admin
+URL: https://bestmage2-theme.bestpharmacy.gr/admin_mtheme/
+URL: bestmage2-theme-final.bestpharmacy.gr/admin_mtheme
+username: aloteam
+password: TrogYNGrAPTOnETrOahl!1@
+
+Eshop URL:
+https://bestmage2-theme.bestpharmacy.gr/
+bestmage2-theme-final.bestpharmacy.gr
+
+
+
+Magento 1:
+https://www.bestpharmacy.gr/
