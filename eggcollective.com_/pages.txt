@@ -1,0 +1,12 @@
+home 
+category( 3 type)
+product
+project
+visit showroom
+surface-break
+past-exhibitions
+artists
+story
+press
+contact
+checkout

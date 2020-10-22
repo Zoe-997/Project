@@ -1,0 +1,31 @@
+	/*
+  	Avenir font: Avenir
+  	Creation date: 24/06/2020 17:42;
+  	*/
+
+
+/*----- FONTS -----*/
+@font-face {
+    font-family: 'Avenir', sans-serif;
+    font-display: auto;
+    src: url('avenir-black.woff2') format('woff2'),
+    url('avenir-black.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir', sans-serif;
+    font-display: auto;
+    src: url('avenir-book.woff2') format('woff2'),
+    url('avenir-book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Avenir', sans-serif;
+    font-display: auto;
+    src: url('avenir-light.woff2') format('woff2'),
+    url('avenir-light.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}

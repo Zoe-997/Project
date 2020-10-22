@@ -1,0 +1,9 @@
+>>>>> subdomain: devm2.amaroso.com.au [1] [1] [1]
+>>>>> Server Public IP: 13.210.254.101
+user: ec2-user
+>>>>> keypair: amaroso-m2.pem
+>>>>> Database Username: devm2admin
+>>>>> Password: )EP]q[*RlzbS{0y
+
+http://devm2.amaroso.com.au/admin
+aloteam/aloteam@123

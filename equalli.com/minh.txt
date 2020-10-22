@@ -1,0 +1,12 @@
+david@moogento.com
+
+SSH
+ssh trent@sj.bettahost.net -p2223
+X9uakrun}9xj
+
+M2 path: public_html/equalli-m2
+
+M2 - Magento
+https://equalli-m2.bettahost.net/index.php/eq_admin
+devmagic
+2aNG9@a%
