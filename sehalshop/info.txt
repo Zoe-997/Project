@@ -1,0 +1,8 @@
+https://sehalshop.pk/ezadmin
+aloteam
+aloteam@123
+
+host: sehalshop.pk
+18765
+user: sehalsho
+pass:admin@123

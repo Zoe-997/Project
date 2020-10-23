@@ -1,0 +1,14 @@
+ssh -v -i seoulmall-hongkong.pem webservice@18.162.226.197
+
+/home/webservice/services/standard
+
+-> seoulmall.kr
+
+Gmail:
+david@askkpop.com
+d>*b7T8D
+
+
+website anh test sẽ là stand.seoulmall.kr
+
+còn website đang chạy là seoulmall.kr

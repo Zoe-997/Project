@@ -1,0 +1,182 @@
+<?php
+$vendor = $block->getVendor();
+$vendorId = $vendor->getVendorId();
+$vendorType = $vendor->getVendorType();
+$id = $vendor->getId();
+
+$storeManager = \Magento\Framework\App\ObjectManager::getInstance()->get('\Magento\Store\Model\StoreManagerInterface');
+$store = $storeManager->getStore();
+$storeId = $store->getStoreId();
+$baseUrl = $store->getBaseUrl();
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$productCollection = $objectManager->create('Vnecoms\VendorsConfig\Model\ResourceModel\Config');
+
+$banner = $productCollection->getConfigData('page/general/logo', $id, $storeId);
+$BannerUrl = $baseUrl . 'media/ves_vendors/banner/' . $banner;
+
+$storeName = $productCollection->getConfigData('general/store_information/name', $id, $storeId);
+$storeShortDescription = $productCollection->getConfigData('general/store_information/short_description', $id, $storeId);
+
+$instagramUrl = $productCollection->getConfigData('page/social/instagram', $id, $storeId);
+$youtubeUrl = $productCollection->getConfigData('page/social/youtube', $id, $storeId);
+
+$hashTags = $productCollection->getConfigData('page/meta/keywords', $id, $storeId);
+$hashTags = explode(',', $hashTags);
+
+$description = $productCollection->getConfigData('page/meta/description', $id, $storeId);
+
+$about = $productCollection->getConfigData('page/general/description', $id, $storeId);
+
+$shippingPolicy = $productCollection->getConfigData('page/general/shipping_policy', $id, $storeId);
+
+$banner2 = $productCollection->getConfigData('page/general/banner', $id, $storeId);
+?>
+<?php if ($vendorType == 1) : ?>
+    <!--block social-->
+    <div class="block-social"
+         style="background-image: url('<?php echo $BannerUrl ?>'); background-position: center; background-size: cover"></div>
+    <div class="profile-social block">
+        <?php if ($block->getVendorUrl()): ?>
+            <a href="<?php echo $block->getVendorUrl(); ?>"
+               title="<?php echo $block->escapeHtml($block->getStoreName()) ?>"><img
+                    title="<?php echo $block->escapeHtml($block->getStoreName()) ?>"
+                    alt="<?php echo $block->escapeHtml($block->getStoreName()) ?>"
+                    src="<?php echo $block->getLogoUrl() ?>" class="avatar"/></a>
+        <?php else: ?>
+            <img title="<?php echo $block->escapeHtml($block->getStoreName()) ?>"
+                 alt="<?php echo $block->escapeHtml($block->getStoreName()) ?>" src="<?php echo $block->getLogoUrl() ?>"
+                 class="avatar"/>
+        <?php endif; ?>
+        <div class="main-info inline-block">
+            <div class="info inline-block">
+                <h3 class="Modnytree">
+                    <?php echo $storeName; ?> &nbsp;
+                    <a target="_blank" href="<?php echo $block->getSocialUrl() ?>"
+                       class="vendor-social-icon <?php echo $block->getIconClass() ?>"
+                       title="<?php echo $block->getTitle() ?>"><span><?php echo $block->getSocialUrl() ?></span></a>
+                    <a href="<?php echo ( isset($instagramUrl) && $instagramUrl != '' ? $instagramUrl : __('#') )?>">
+                        <img src="/assets/images/icon/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="<?php echo ( isset($youtubeUrl) && $youtubeUrl != '' ? $youtubeUrl : __('#') )?>">
+                        <img src="/assets/images/icon/youtube-ico.svg" alt="youtube icon">
+                    </a>
+
+                    <div class="main-share">
+                        <a href="#" class="follow">FOLLOW</a>
+                        <a href="#" target="_blank">
+                            <img src="/assets/images/icon/ic-share-dark.png" alt="share" class="share">
+                        </a>
+                        <a href="#">
+
+                        </a>
+                    </div>
+                </h3>
+                <p class="Your-bio-is-empty-A"><?php echo ( isset($storeShortDescription) && $storeShortDescription != '' ? $storeShortDescription : __('Not available') )?></p>
+
+                <p class="main-hashtag">
+                    <?php if( isset($hashTags) && $hashTags != '' ) : ?>
+                    <?php foreach ($hashTags as $hashTag) : ?>
+                        <span class="hashtag"><a href="#"># <?php echo $hashTag ?></a></span>
+                    <?php endforeach; ?>
+                    <?php else :
+                        __('Not available');
+                    endif; ?>
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="block">
+<?php else : ?>
+    <div class="block-social block-supplier"
+         style="background-image: url('<?php echo $BannerUrl ?>'); background-position: center; background-size: cover">
+        <div class="store-name-block">
+            <h1><?php echo ( isset($storeName) && $storeName != '' ? $storeName : __('Not available') )?></h1>
+
+            <p><?php echo ( isset($description) && $description != '' ? $description : __('Not available') )?></p>
+            <a href="#store-shop"><img src="/assets/images/icon/arrow-bottom-white.svg" alt=""/></a>
+        </div>
+    </div>
+    <div class="block block-about">
+        <h1>About</h1>
+    </div>
+    <hr class="block">
+    <div class="block block-about-content">
+        <p><?php echo ( isset($about) && $about != '' ? $about : __('Not available') )?></p>
+    </div>
+<?php endif; ?>
+<div class="banner block"
+     style="background-image: url('/assets/images/banner1.gif'); background-position: center; background-size: cover"></div>
+<div class="banner block"
+     style="background-image: url('/assets/images/banner2.png'); background-position: center; background-size: cover"></div>
+<!--end block social-->
+<!--block product-->
+<div class="main-product block" id="store-shop">
+    <a href="#" data-content="contents" class="tab active tab-left">Contents</a>
+    <a href="#" data-content="product" class="tab tab-right">Product</a>
+    <a href="#" data-content="shipping" class="tab tab-right">Shipping Policies</a>
+</div>
+<div class="block">
+    <div class="block-content contents" id="instagram-gallery">
+        <?php
+        $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+        $photoCollection = $objectManager->create('Magenest\InstagramShop\Block\Photo\Slider');
+
+        $photoCollection2 = $objectManager->create('Magenest\InstagramShop\Model\ResourceModel\Photo\Collection');
+        $photos = $photoCollection2->addFieldToFilter('vendor_id', $id)->getPhotoIdItems();
+
+        ?>
+        <?php foreach( $photos as $photo ) : ?>
+            <div class="child-content">
+                <img src="<?= $photo->getSource() ?>" alt=""/>
+            </div>
+        <?php endforeach; ?>
+
+        <?php echo $this->getLayout()
+            ->createBlock('Magenest\InstagramShop\Block\Photo\Slider')
+            ->setTemplate('Magenest_InstagramShop::default.phtml')
+            ->toHtml(); ?>
+
+    </div>
+    <div class="block-content shipping">
+        <?php echo ($shippingPolicy ? $shippingPolicy : __('Not available'))?>
+    </div>
+</div>
+<!--end block product-->
+
+<script type="text/javascript">
+    require([
+        'jquery'
+    ], function ($) {
+        $(document).ready(function () {
+
+            var product_list_mode = '<?php echo (isset($_GET['product_list_mode']) ? 'list' : '')  ?>';
+            if( product_list_mode != '' ) {
+                $('.tab').removeClass('active');
+                $('.tab[data-content=product]').addClass('active');
+            }
+
+            $.each( $('.tab'), function() {
+                if( $(this).hasClass('active') ) {
+                    var data_content = $(this).attr('data-content');
+                    $('.'+data_content+'').addClass('active');
+                }
+            });
+
+            $('.tab').click(function () {
+                $('.tab').removeClass('active');
+                $(this).addClass('active');
+                $('.block-content').removeClass('active');
+
+                if( $(this).hasClass('active') ) {
+                    var data_content = $(this).attr('data-content');
+                    $('.'+data_content+'').addClass('active');
+                }
+
+                return false;
+            });
+
+        });
+    });
+</script>
+

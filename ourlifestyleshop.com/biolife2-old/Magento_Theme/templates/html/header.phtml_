@@ -1,0 +1,108 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Theme\Block\Html\Header $block
+ */
+?>
+<?php 
+ $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); 
+ $customerSession = $objectManager->get('Magento\Customer\Model\SessionFactory')->create();
+?>
+<link
+    href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext"
+    rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900&display=swap" rel="stylesheet">
+<link
+    href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&display=swap&subset=cyrillic,latin-ext,vietnamese"
+    rel="stylesheet">
+<header class="page-header alothemes">
+    <div class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2 col-md-3">
+                        <span class="header-top-email"></span>
+                        <p class="header-email-address">Biolife@company.com</p>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-4">
+                        <ul class="header-social-items">
+                            <li class="header-social-item"><a href="" class="header-social twitter"></a></li>
+                            <li class="header-social-item"> <a href="" class="header-social facebook"></a></li>
+                            <li class="header-social-item"><a href="" class="header-social princess"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5">
+					<div class="header-top-link">
+							<?php echo $this->getChildHtml('store_language'); ?>
+							<?php echo $this->getChildHtml('currency'); ?>
+						</div>
+                        <div class="link account">
+                            <a href="http://wp2cart.com/biolife/customer/account/" class="top-link-myaccount"></a>
+                            <a href="http://wp2cart.com/biolife/wishlist/">My Account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-2 col-sm-12">
+                        <div class="header-logo">
+                            <?php echo $this->getChildHtml('logo'); ?>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-md-4 col-sm-12">
+                        <form class="header-form-search">
+                            <input type="text" placeholder="Search here">
+                            <button type="button"><span class="header-search-btn"></span></button>
+                        </form>
+					</div>
+					<div class="col-xl-4 col-md-4 col-sm-12">
+						<div class="header-contact">
+						<span class="phone-contact"></span>
+						<p class="number-phone">(+900)123 456 7891</p>
+						<p class="work-time">Mon-Fri: 8:00am - 7:30pm, Sat-Sun: 9:30am - 4:30pm</p>
+					</div>
+					</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="header-content menu-mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-3 col-sm-12">
+                        <div class="header-all-departments">
+							<span class="all-departments-icon"></span>
+							<p class="all-departments-text">All departments</p>
+						</div>
+                    </div>
+                    <div class="header-right-menu col-xl-6 col-md-6 col-sm-12" style="position: static;">
+                        <?php echo $this->getChildHtml('navigation.sections'); ?>
+                        <?php echo $this->getChildHtml('catalog.topnav'); ?>
+                    </div>
+                    <div class="content-cart col-xl-3 col-md-3 col-sm-12">
+                        <form class="header-form-minicart">
+                            <?php echo $this->getChildHtml('minicart'); ?>
+                            <span data-action="toggle-nav"
+                                class="action nav-toggle"><span><?php /* @escapeNotVerified */ echo __('Toggle Nav') ?></span></span>
+                            <p class="header-goto-cart"><a href="">go</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-header">
+            <p>Go biolife in the new year</p>
+        </div>
+    </div>
+</header>

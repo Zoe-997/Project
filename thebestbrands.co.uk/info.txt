@@ -1,0 +1,20 @@
+CPanel
+https://www.thebestbrands.co.uk/cpanel
+
+user: thebes89
+
+Pass: Alothemes123*
+
+ftp.thebestbrands.co.uk
+user: thebes89
+Pass: Alothemes123*
+
+Website admin
+
+thebestbrands.co.uk/admin
+
+User: admin
+
+Password:
+
+Alothemes12345*

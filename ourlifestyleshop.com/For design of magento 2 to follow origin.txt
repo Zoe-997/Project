@@ -1,0 +1,36 @@
+For design of magento 2 to follow original site ourlifestyleshop.com
+
+Home page
+Category Page
+Product Page
+Checkout Page
+Shopping Cart 
+Contact us
+faq and our story
+
+Cpanel:
+https://cpanel.ols2.bbud.sg
+ols2
+zAyUr6yTesg
+
+Admin path - admin_t3avp2
+http://ols2.bbud.sg/admin_t3avp2/
+
+User - adminCha1254
+PW - xZP8yZkAxrA
+
+php bin/magento setup:upgrade
+php -dmemory_limit=2G bin/magento setup:static-content:deploy -f 
+
+
+SSH account:
+<Host>ftp.ols2.bbud.sg</Host>
+            <Port>22</Port>
+            <Protocol>1</Protocol>
+            <Type>0</Type>
+            <User>ols2</User>
+
+password: zAyUr6yTesg
+
+
+page old: https://www.ourlifestyleshop.com/

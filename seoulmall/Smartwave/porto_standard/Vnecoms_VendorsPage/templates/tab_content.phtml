@@ -1,0 +1,26 @@
+<!--block product-->
+<div class="main-product block" id="store-shop">
+    <a href="#" data-content="contents" class="tab active tab-left">Contents</a>
+    <a href="#" data-content="product" class="tab tab-right">Product</a>
+    <a href="#" data-content="shipping" class="tab tab-right">Shipping Policies</a>
+</div>
+<div class="block">
+    <div class="block-content contents">
+        <div class="child-content"><img src="/assets/images/instagram/1.jpg" alt=""></div>
+        <div class="child-content"><img src="/assets/images/instagram/2.jpg" alt=""></div>
+        <div class="child-content"><img src="/assets/images/instagram/3.jpg" alt=""></div>
+        <div class="child-content"><img src="/assets/images/instagram/2.jpg" alt=""></div>
+        <div class="child-content"><img src="/assets/images/instagram/2.jpg" alt=""></div>
+        <div class="child-content"><img src="/assets/images/instagram/3.jpg" alt=""></div>
+        <div class="child-content"><img src="/assets/images/instagram/3.jpg" alt=""></div>
+        <div class="child-content"><img src="/assets/images/instagram/3.jpg" alt=""></div>
+        <div class="child-content"><img src="/assets/images/instagram/3.jpg" alt=""></div>
+    </div>
+    <div class="block-content product">
+            <?php echo $block->getProductListHtml() ?>
+    </div>
+    <div class="block-content shipping">
+        <?php echo ($block->getVendorShipping()?$block->getVendorShipping():__('Not available'))?>
+    </div>
+</div>
+<!--end block product-->

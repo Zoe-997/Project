@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+		<referenceContainer name="product.primary.column" htmlClass="product-primary-column col-md-12 col-sm-12 col-xs-12"/>
+		<move element="page.main.title" destination="product.content.boxoptions" before="-"/>
+
+        <move element="product.info.review" destination="product.content.boxoptions" after="page.main.title"/>
+        <move element="product.info.overview" destination="product.content.boxoptions" after="page.main.title"/>
+        <!-- <move element="product.info.stock.sku" destination="product.content.boxoptions" after="product.info.review" before="product.info.overview"/> -->
+        <!-- <move element="product.info.price" destination="product.content.boxoptions" before="product.info.options.wrapper"/> -->
+        <move element="product.price.tier" destination="product.content.boxoptions" after="product.info.price"/>
+        <move element="product.info.price" destination="product.content.boxcart" before="-"/>
+        <move element="product.info.addtocart" destination="product.content.boxcart" after="product.info.price"/>
+        <move element="product.info.extrahint" destination="product.content.boxcart" after="-"/>
+
+        <referenceContainer name="product.info.form.content">
+        	<container name="product.content.wrapper.left" htmlTag="div" htmlClass="row" >
+        		<container name="product.content.boxoptions" htmlTag="div" htmlClass="product-content-boxoptions col-md-6">
+        			<container name="alo.product.timer" as="alo_product_timer" label="Alo Product Timer"  htmlTag="div" htmlClass="sections-content-timer wrap"/>
+        			<referenceContainer name="alo.product.timer" htmlClass="additional-timer-block">
+        				<block class="Magento\Catalog\Block\Product\View" name="product.timer" as="product_timer" template="product/view/timer.phtml">
+        					<arguments>
+        						<argument translate="true" name="title" xsi:type="string">Timer</argument>
+        					</arguments>
+        				</block>
+        			</referenceContainer>
+        		</container>
+        		<container name="product.info.form.content.detai" htmlTag="div" htmlClass="content-form-detail col-md-6">
+        			<container name="product.content.boxcart" htmlTag="div" htmlClass="product-content-boxcart"/>
+        		</container>
+        	</container>
+        </referenceContainer>
+        <referenceBlock name="product.secondary.column" remove="true"/>
+    </body>
+</page>

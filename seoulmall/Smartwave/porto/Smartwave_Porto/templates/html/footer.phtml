@@ -1,0 +1,96 @@
+<?php
+    $footer = $this->getConfig('porto_settings/footer');
+?>
+<div class="footer">
+<?php
+    if( $footer['footer_top'] ){
+?>
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <?php
+                    $area = 'footer_top_block';
+                    $type = $footer[$area];
+                    if( $type == 'custom' && $footer['footer_top_custom'] ){
+                        $block = $this->getLayout()->createBlock('Magento\Cms\Block\Block');
+                        if($block) {
+                            $block->setBlockId($footer['footer_top_custom']);
+                        }
+                        if($block){
+                            echo '<div class="custom-block">'.$block->toHtml().'</div>';
+                        }
+                    }
+
+                ?>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php
+    }
+    if( $footer['footer_middle'] ){
+?>
+        <div class="container">
+            <div class="footer-first-line">
+                <div class="row">
+                    <div class="col-md-10 col-xs-12">
+                        <h5 class="hidden-lg hidden-md">판매자정보</h5>
+                        주식회사 서울몰 대표자 : XIN YONGSHAN 신용산 사업자등록번호 : 201-86-12141&#8203;<br>
+                        주소 : 서울 중구 다산로 47길 39 루키버드빌딩 5층 통신판매업신고번호 : 2015-서울중구-1481&#8203;<br>
+                        전화번호/이메일 : 02-2231-7777 / INFO@DAMDA.COM 팩스번호 : 02-3298-6600 &#8203; 호스팅 서비스 : AMAZON AWS<br>
+                    </div>
+                    <div class="col-md-2 col-xs-12 hidden-sm hidden-xs">
+                        <a class="type-2" href="#">판매자정보</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-second-line">
+                주식회사 담다닷컴 사이트의 상품/판매자/쇼핑정보, 컨텐츠, UI 등에 대한 무단 복제, 전송, 배포, 스크래핑 등의 행위는 저작권법, 콘텐츠사업 진흥법 등에 의하여 엄격히 금지됩니다.
+                <a href="#">콘텐츠산업 진흥법에 따른 표시</a><br>
+                <strong>주식회사 담다닷컴은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 주식회사 담다닷컴은 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.</strong><br>
+                Copyright&amp; Damda co., Ltd All rights reserved.
+            </div>
+        </div>
+<?php
+    }
+    if( $footer['footer_middle_2'] ){
+?>
+    <div class="footer-middle footer-middle-2">
+        <div class="container">
+            <div class="row">
+            <?php
+                for( $i = 1; $i <= 4; $i++ ){
+                    $area = 'footer_middle_2_column_'.$i;
+                    $type = $footer[$area];
+                    if( $type ){
+                        echo '<div class="col-lg-'.$footer[$area.'_size'].'">';
+                    }
+                    if( $type == 'custom' && $footer[$area.'_custom'] ){
+                        $block = $this->getLayout()->createBlock('Magento\Cms\Block\Block');
+                        if($block) {
+                            $block->setBlockId($footer[$area.'_custom']);
+                        }
+                        if($block){
+                            echo $block->toHtml();
+                        }
+                    }
+                    if( $type == 'newsletter' ){
+                        echo $this->getChildHtml('footer.newsletter');
+                    }
+                    if( $type ){
+                        echo '</div>';
+                    }
+                }
+            ?>
+            </div>
+        </div>
+    </div>
+<?php
+    }
+?>
+</div>
+<div class="powered-by"><a href="/"><img
+            src="/assets/images/footer_logo.png"
+            alt="damda"></a></div>
+<a href="javascript:void(0)" id="totop"><em class="porto-icon-up-open"></em></a>

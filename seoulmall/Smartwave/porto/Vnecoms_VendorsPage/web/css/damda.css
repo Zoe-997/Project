@@ -1,0 +1,57 @@
+.block-social {
+    text-align: center;
+    height: auto;
+}
+
+.block-social .store-name-block {
+    margin: 29.3rem auto 0;
+    width: 49.3rem;
+}
+.block-social h1 {
+    font-family: NotoSans;
+    font-size: 4.8rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -1.31px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+.block-social p {
+    font-family: NotoSans;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: -0.54px;
+    text-align: center;
+    color: #ffffff;
+}
+.block-social a {
+    display: inline-block;
+    margin: 15rem auto 4.7rem;
+}
+.block-about {
+    font-family: NotoSans;
+    font-size: 2.8rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+}
+.block-about h1 {
+    margin-bottom: 0;
+}
+
+.block-about-content p {
+    font-family: NotoSans;
+    font-size: 2.2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: normal;
+}

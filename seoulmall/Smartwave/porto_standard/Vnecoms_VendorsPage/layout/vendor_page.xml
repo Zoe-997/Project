@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-left"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Vnecoms_Vendors::css/vendor.css"/>
+        <css src="Vnecoms_VendorsPage::css/styles.css"/>
+        <css src="Vnecoms_VendorsPage::css/supplier.css"/>
+    </head>
+    <body>
+        <referenceBlock name="head.additional">
+            <block class="Vnecoms\VendorsPage\Block\Head" name="vendor.head.html"
+                   template="Vnecoms_VendorsPage::head.phtml" after="-"/>
+        </referenceBlock>
+        <referenceContainer name="before.body.end">
+            <block class="Vnecoms\VendorsPage\Block\Footer" name="vendor.footer.html"
+                   template="Vnecoms_VendorsPage::footer.phtml" after="-"/>
+        </referenceContainer>
+        <attribute name="class" value="vendor-page"/>
+        <attribute name="class" value="page-products"/>
+        <attribute name="class" value="page-with-filter"/>
+        <referenceContainer name="page.top">
+            <block class="Vnecoms\VendorsPage\Block\Profile\Top" name="vendor.profile.top"
+                   template="Vnecoms_VendorsPage::supplier.phtml" after="navigation.sections">
+            </block>
+        </referenceContainer>
+        <referenceBlock name="page.main.title" remove="true"/>
+        <referenceContainer name="vendor.home.review.container" remove="true"/>
+
+    </body>
+</page>

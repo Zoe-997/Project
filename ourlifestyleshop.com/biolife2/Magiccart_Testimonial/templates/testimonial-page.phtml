@@ -1,0 +1,60 @@
+<?php
+if(!$this->getEnabled()) return;
+$selector = 'alo-content-'.rand(0,999999999);
+$testimonials = $this->getTestimonials();
+if(!count($testimonials)) return;
+?>
+<div class="<?php /* @escapeNotVerified */ echo $selector ?>">
+    <div class="testimonial" <?php foreach ($this->getFrontendCfg() as $opt) :?>
+            <?php endforeach;?>>
+            <div class="row">
+                <?php $i=0; foreach ($testimonials as $testimonial) :?>
+                <div class="item col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="item-content">
+                        <div class="inner-customer clearfix">
+                            <div class="inner-left">
+                                <div class="customer">
+                                    <a href="<?php echo $this->getUrl('testimonial'); ?>">
+                                        <img class="avatar img-responsive"
+                                        src="<?php echo $this->escapeUrl($this->getImage($testimonial)) ?>"
+                                        alt="<?php echo __($this->escapeHtml($testimonial->getName())) ?>"
+                                        title="<?php echo __($this->escapeHtml($testimonial->getName())) ?>" />
+                                    </a>
+                                    <!-- <div class="desc">“</div> -->
+                                    <div class="customer-info">
+                                        <span class="relatedname">RELATED PRODUCT</span>
+                                        <div class="inner-item-name">
+                                            <p class="name title-name"><?php echo $this->escapeHtml($testimonial->getName()); ?></p>
+                                        </div>                                 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-info">
+                            <div class="testimonial_text">
+                                <div class="content sub-text"><?php echo $this->escapeHtml($testimonial->getText()); ?></div>
+                            </div>
+                            <div class="testimonial_website">
+                                <div class="content sub-website"><a href="<?php echo $this->escapeHtml($testimonial->getWebsite()); ?>"><?php echo $this->escapeHtml($testimonial->getWebsite()); ?></a></div>
+                            </div>
+                            <div class="inner-item-job">
+                                <p class="job title-job"><?php echo $this->escapeHtml($testimonial->getJob());?></p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <?php endforeach ?>
+            </div>
+        </div>
+</div>
+
+<script type="text/javascript">
+require([
+    'jquery',
+    'magiccart/slick',
+    'alothemes',
+], function($, slick, alothemes) {
+    var testimonial = $('.<?php echo $selector ?> .testimonial');
+    if (testimonial.length) $('head').append(magicproduct(testimonial, '.item'));
+});
+</script>

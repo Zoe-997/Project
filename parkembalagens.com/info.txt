@@ -1,0 +1,17 @@
+https://alothemes.com/ticket/scp/tickets.php?id=2975
+
+Hi, how are you?
+Thank you for your help.
+The domain is not yet published. I added in my hosts files
+177.53.142.145 parkembalagens.com.br
+177.53.142.145 www.parkembalagens.com.br
+
+https://www.parkembalagens.com.br
+
+FTP Server: parkembalagens.com.br
+FTP User: parkembalagensco
+pass: B)[@#!)+4GPl
+
+Admin link: https://parkembalagens.com.br/admloja
+User Admin: admin
+Admin Password: Senha@1234

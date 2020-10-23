@@ -1,0 +1,21 @@
+<?php
+/**
+ * Copyright © 2017 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+
+/** @var $block \Magento\Customer\Block\Account\AuthorizationLink */
+$dataPostParam = '';
+if (!$block->isLoggedIn()) {
+    ?>
+    <li class="authorization-link <?= $block->isLoggedIn() ? 'log-out' : 'log-in'?>" data-label="<?php echo $block->escapeHtml(__('or')); ?>">
+        <a <?php /* @escapeNotVerified */ echo $block->getLinkAttributes(); ?><?php /* @escapeNotVerified */ echo $dataPostParam; ?>></a>
+    </li>
+    <?php
+}
+
+
+

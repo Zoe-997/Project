@@ -1,0 +1,22 @@
+<div class="content-banner bottom-text-banner clearfix">
+	<div class="container">
+		<div class="banner-inner">
+			<div class="images-benner"><img src="{{media url="icon.png"}}" alt=""></div>
+			<div class="for-you"><em>All the best item for You</em></div>
+			<div class="block-static-title">Our Products</div>
+		</div>
+		<div class="box-products box-products-two bottom-product">
+			<div class="container">{{widget type="Magiccart\Magicproduct\Block\Widget\Product" identifier="feature-products" template="product.phtml"}}</div>
+		</div>
+	</div>
+</div>
+<!-- magicproduct -->
+<p>&nbsp;</p>
+<!-- slide-blog-bottom -->
+<div class="container footer-slide-blog">
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="for-you"><em>The freshest and most exciting news</em></div>
+		{{widget type="Magiccart\Alothemes\Block\Widget\Blog" title="From the Blog" limit="6" slide="1" vertical="false" infinite="true" autoplay="true" arrows="true" dots="false" speed="300" autoplay-Speed="3000" padding="15" template="blog.phtml" rows="1" mobile="1" portrait="1" landscape="2" tablet="3" notebook="3" laptop="3" desktop="3" widescreen="3" visible="3" type_name="Blog Slider Widget"}}</div>
+	</div>
+</div>

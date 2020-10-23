@@ -1,0 +1,5 @@
+Header, Footer: Smartwave_Porto
+less : /home/webservice/services/standard/app/design/frontend/Smartwave/porto/web/css/source
+count-down: Smartwave_Dailydeals
+top-menu: Smartwave_Megamenu
+navigation.sections: /home/webservice/services/standard/vendor/magento/module-theme/view/frontend/templates/html/sections.phtml

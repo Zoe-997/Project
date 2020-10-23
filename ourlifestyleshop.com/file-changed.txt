@@ -1,0 +1,39 @@
+Configure:
+Admin Panel > CONTENT > blocks > static-home-slide
+				 column-main-classify (enabled)
+				 special-offer-home2 (enabled)
+				 natural-fruit-juice-home2 (enabled)
+				 fruit-juice-producttab-home2 (enabled)
+				 static_sections_bottom
+				 payment_method
+
+Admin Panel > CONTENT > pages > biolife2
+
+css:
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Theme/web/css/source/_extend.less
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magiccart_Magicmenu/web/css/source/_module.less
+
+xml:
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magiccart_Alothemes/layout/cms_index_index.xml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magiccart_Magicmenu/layout/default.xml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Catalog/layout/catalog_category_view.xml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Catalog/layout/catalog_product_view.xml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Theme/layout/default_head_blocks.xml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Contact/layout/contact_index_index.xml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/etc/view.xml
+
+
+phtml:
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Theme/templates/html/header.phtml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magiccart_Testimonial/templates/testimonial.phtml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magiccart_Magicproduct/templates/product/grid.phtml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magiccart_Magicproduct/templates/product.phtml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Catalog/templates/product/list.phtml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Catalog/templates/product/list/toolbar.phtml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magento_Catalog/templates/product/view/addtocart.phtml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magepow_Ajaxcart/templates/stickycart.phtml
+/home/ols2/public_html/app/design/frontend/Alothemes/biolife2/Magiccart_Testimonial/templates/testimonial-page.phtml
+
+
+
+

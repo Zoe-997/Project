@@ -1,0 +1,1 @@
+/app/design/frontend/Alothemes/pizzaro/web/css/responsive.css
