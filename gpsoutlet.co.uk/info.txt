@@ -1,0 +1,44 @@
+SSH:
+https://ptrserver.thebestbrands.co.uk:2083/logout/?locale=en
+user: gpsoutlet
+password: GPSADMIN123**
+
+FTP:
+
+FTP Host:
+
+FTP Host: 173.231.204.158
+
+Port: 21
+
+Username: gpsoutlet  /   aloteam@gpsoutlet.co.uk
+
+Password: Wyomind123*    /  GPSADMIN123** / admin@123
+
+
+host: thebestbrands.co.uk
+user: gpsoutlet
+pass: GPSADMIN123**
+port: 22
+
+The current Log in details are
+
+gpsoutlet.co.uk/admin
+
+username: admin2
+
+password: Linnworks1
+
+1. Can you please add "Shop by Series" text exactly where it is on the screenshot? I cannot seem to do it!
+---->  image-1
+Admin Panel > CONTENT > pages > page
+
+
+2. Can you please add the Featured products magic widget between the Tiles in the screenshot below, I have tries doing this and it just crashes my site, so Im doing it wrong!
+---->  image-2
+
+3. Enlarge the Logo to fit the gap, without losing quality
+---->  image-3
+Admin Panel > CONTENT > configuration> page
+
+If you could please do the work over night tonight and let me know its done when I sign on tomorrow morning

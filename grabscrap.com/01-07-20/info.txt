@@ -1,0 +1,27 @@
+grabscrap.com/cpanel
+grabscrap
+Vijay12345#
+
+
+http://grabscrap.com/admin/
+electro/Vijay12345#
+
+
+
+php -dmemory_limit=5G bin/magento setup:upgrade
+
+php -dmemory_limit=5G bin/magento setup:static-content:deploy en_US --theme Magento/backend --theme Alothemes/electro6 -f
+
+php -dmemory_limit=5G bin/magento config:set dev/static/sign 0
+php -dmemory_limit=5G bin/magento cache:flush
+
+
+php -dmemory_limit=2G bin/magento config:set dev/css/merge_files 0
+php -dmemory_limit=2G bin/magento config:set dev/css/minify_files 0
+php -dmemory_limit=2G bin/magento config:set dev/js/minify_files 0
+php -dmemory_limit=2G bin/magento config:set dev/js/enable_js_bundling 0
+
+php -dmemory_limit=5G bin/magento catalog:images:resize
+
+app/design/frontend/Alothemes/electro/web/images/alothemes/about-parallax.jpg
+pub/static/frontend/Alothemes/electro6/en_US/images/alothemes/about-parallax.jpg

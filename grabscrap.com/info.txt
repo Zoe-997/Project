@@ -1,0 +1,29 @@
+http://grabscrap.com/cpanel
+grabscrap
+Hardik12345#
+
+
+http://grabscrap.com/admin/
+electro/electro@123
+
+
+
+php -dmemory_limit=5G bin/magento setup:upgrade
+
+php -dmemory_limit=5G bin/magento setup:static-content:deploy en_US --theme Magento/backend --theme Alothemes/electro6 -f
+
+
+8/9/2020
+199.250.207.251
+grabscrap
+aloteam@123
+
+grabscrap.com/cpanel
+grabscrap
+Vijay12345#
+
+http://grabscrap.com/admin/
+electro/Vijay12345#
+
+
+https://m2.alothemes.com/electro2/english3/

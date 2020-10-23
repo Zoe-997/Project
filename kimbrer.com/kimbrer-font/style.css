@@ -1,0 +1,8 @@
+@font-face {
+	src: url('MaxLF-Light.otf') format('truetype');
+	font-weight:400;
+	font-style:normal;
+	font-family: "Kimbrer";
+	font-display: swap; /* Read next point */  
+	unicode-range: U+000-5FF; /* Download only latin glyphs */  
+}

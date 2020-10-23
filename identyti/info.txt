@@ -1,0 +1,23 @@
+Check file dính kèm. Thông tin truy c?p m?i" Magento admin:
+https://identityleathercraft.icecomms-server.co.uk/index.php/admin
+username: admin
+password: eNPNwmbC_2u;cY(5
+
+Front end
+https://identityleathercraft.icecomms-server.co.uk/index.php/
+
+FTP:
+FTP Host: ftp.icecomms-server.co.uk <http://ftp.icecomms-server.co.uk/>
+FTP User: icecomms
+FTP Pass: 2fCiu65Go3
+
+ 
+cPanel
+https://viola.ldn.kualo.net:2083
+username: icecomms
+password: 2fCiu65Go3
+
+
+Best regards
+
+Mike 

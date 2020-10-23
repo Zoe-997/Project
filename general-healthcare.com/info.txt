@@ -1,0 +1,32 @@
+ftp.general-healthcare.com
+User: gener717
+&8+(XFa,v,+f
+
+https://genhealthcare.co.uk/
+
+https://genhealthcare.co.uk/admin_1au2qb
+user: alo
+Password: da2be82e425a6
+
+
+
+file changed
+style:
+/public_html/app/design/frontend/Alothemes/demo2/web/css/responsive.css
+/public_html/app/design/frontend/Alothemes/demo2/web/css/rtl.css
+
+
+phtml:
+/public_html/app/design/frontend/Alothemes/demo2/Magento_Catalog/templates/product/view/addtocart.phtml
+/public_html/app/design/frontend/Alothemes/demo2/Magento_Review/templates/helper/summary.phtml
+/public_html/app/design/frontend/Alothemes/demo2/Magento_Catalog/templates/product/view/addto.phtml
+
+
+xml:
+/public_html/app/design/frontend/Alothemes/demo2/Magento_Catalog/layout/catalog_product_view.xml
+
+
+35.214.63.253
+port: 18765
+user: gener717
+pass: aloteam@123

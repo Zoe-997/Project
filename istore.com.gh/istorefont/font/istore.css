@@ -1,0 +1,35 @@
+	/*
+  	Istore icon font: Istore
+  	Creation date: 01/10/2020 04:57
+  	*/
+
+@font-face {
+  font-family: "Istore";
+  src: url("./Istore.eot");
+  src: url("./Istore.eot?#iefix") format("embedded-opentype"),
+       url("./Istore.woff2") format("woff2"),
+       url("./Istore.woff") format("woff"),
+       url("./Istore.ttf") format("truetype"),
+       url("./Istore.svg#Istore") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Istore";
+    src: url("./Istore.svg#Istore") format("svg");
+  }
+}
+
+[class^="istore-"]:before, [class*=" istore-"]:before,
+[class^="istore-"]:after, [class*=" istore-"]:after {   
+  font-family: Istore;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.istore-shopping-bag-of-normal-design-outline:before { content: "\f100"; }
+.istore-settings:before { content: "\f101"; }
+.istore-magnifying-glass:before { content: "\f102"; }

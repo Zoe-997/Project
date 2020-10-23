@@ -1,0 +1,24 @@
+7/10/2020
+Filupload
+Hostname:            ftp://dev.magepartner.net
+Username:            kimbrer_dev
+Password:            GZTc62WW
+Home_dir:            /var/www/kimbrer.dev
+Doc_root:            /var/www/kimbrer.dev/public_html
+
+Shell-adgang (SSH)
+Hostname:            dev.magepartner.net
+Port:		     15873
+Username:            kimbrer_dev
+Læg din pub-key i .ssh/authorized_keys, eller send den til os.. Vi tillader kun adgang via nøgler
+
+Databaseadministration
+Hostname:            http://dev.magepartner.net/
+Username:            kimbrer
+Password:            GZTc62WW
+DB_host:             localhost
+DB_name:             kimbrer
+
+
+http://kimbrerdev.dev.magepartner.net/admin_vck9n3/admin/dashboard/index/key/80d976f0550a0875be18e9893eaf98ecac431d195ef855675b669bbb2402e047/
+nicolai/Findus123@
