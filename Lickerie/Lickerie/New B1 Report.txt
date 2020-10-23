@@ -1,0 +1,96 @@
+All site bottom page social media links do not function.
+
+shopping Cart icon doesn't change when products added
+-> file changed: /home/wp2cart/web/wp2cart.com/public_html/lickerie/app/design/frontend/Alothemes/lickerie/Magento_Theme/web/css/source/_extend.less
+
+
+Home Page Your Account : Rename to "Login" to "Signin" then "My Account" to "Register" = maybe one could be removed or active depending on login or logout.
+
+rename Login to Signin on bottom page = maybe one could be removed or active depending on login or logout.
+
+(Account Menu pulldown) "Signin" must be renamed to "Login"
+
+Where is the new Public "Affliate Program" pages? We must place this topic public at home page bottom "Affliate Program"
+
+Also where is Affliate "Signin" and "Login"?
+-> file changed: /home/wp2cart/web/wp2cart.com/public_html/lickerie/app/design/frontend/Alothemes/lickerie/Magento_Customer/templates/account/link/authorization.phtml
+Configure:
+Admin Panel > CONTENT > blocks > add-links
+( 
+	http://prntscr.com/rh3pt6 
+ 	http://prntscr.com/rh3raq 
+)
+
+
+https://wp2cart.com/lickerie/products/pink-choco
+
+FYI there is a shopping cart bug that when I add items to cart it stays one the same screen. Now I can't duplicate it. Please note, you must test to add all items to shopping carts as shipping cart add changes on my browser a few times. The process should remain the same.
+
+Products item size select display are not always sorted on page. i.e. A B C D E F G
+-> ?
+
+
+
+https://wp2cart.com/lickerie/contacts/
+
+Contact Us please add "Support Issues" pull down option with support@lickerie.com Email to "Reason for your inquiry"
+-> file changed: /home/wp2cart/web/wp2cart.com/public_html/lickerie/app/design/frontend/Alothemes/lickerie/Magento_Contact/templates/form.phtml
+
+
+
+https://wp2cart.com/lickerie/contacts/
+
+Whoops, our bad...
+
+The page you requested was not found, and we have a fine guess why.
+
+        If you typed the URL directly, please make sure the spelling is correct.
+        If you clicked on a link to get here, the link is outdated.
+
+What can you do?
+    Have no fear, help is near! There are many ways you can get back on track with Magento Store.
+
+        Go back to the previous page.
+        Use the search bar at the top of the page to search for your products.
+        Follow these links to get you back on track!
+        Store Home | My Account
+-> file changed in admin: content/blocks/footer_links_company
+
+
+https://wp2cart.com/lickerie/customer/account/login'/ (is this URL bad with "'"?)
+
+Whoops, our bad...
+
+The page you requested was not found, and we have a fine guess why.
+
+        If you typed the URL directly, please make sure the spelling is correct.
+        If you clicked on a link to get here, the link is outdated.
+
+What can you do?
+    Have no fear, help is near! There are many ways you can get back on track with Magento Store.
+
+        Go back to the previous page.
+        Use the search bar at the top of the page to search for your products.
+        Follow these links to get you back on track!
+        Store Home | My Account
+
+-> file changed in admin: content/blocks/footer_links_company
+
+https://wp2cart.com/lickerie/privacy-policy-cookie-restriction-mode (why this URL name?)
+
+Whoops, our bad...
+
+The page you requested was not found, and we have a fine guess why.
+
+        If you typed the URL directly, please make sure the spelling is correct.
+        If you clicked on a link to get here, the link is outdated.
+
+What can you do?
+    Have no fear, help is near! There are many ways you can get back on track with Magento Store.
+
+        Go back to the previous page.
+        Use the search bar at the top of the page to search for your products.
+        Follow these links to get you back on track!
+        Store Home | My Account
+
+-> file changed in admin : content/blocks/footer_links

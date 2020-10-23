@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/** @var \Magento\Customer\Block\Account\AuthorizationLink $block */
+
+$dataPostParam = '';
+if ($block->isLoggedIn()) {
+    $dataPostParam = sprintf(" data-post='%s'", $block->getPostParams());
+}
+?>
+<li><a href="<?php echo $this->getUrl('customer/account/'); ?>" title="<?php echo __('My Account') ?>"><?php echo __('My Account') ?></a></li>
+<li><a href="<?php echo $this->getUrl('wishlist/'); ?>" title="<?php echo __('My wishlist') ?>"><?php echo __('My wishlist') ?></a></li>
+<li><a href="<?php echo $this->getUrl('checkout/cart/'); ?>" title="<?php echo __('My Cart') ?>"><?php echo __('My Cart') ?></a></li>
+<li><a href="<?php echo $this->getUrl('checkout/'); ?>" title="<?php echo __('Checkout') ?>"><?php echo __('Checkout') ?></a></li>
+<li class="authorization-link" data-label="<?= $block->escapeHtmlAttr(__('or')) ?>">
+    <a <?= /* @noEscape */ $block->getLinkAttributes() ?><?= /* @noEscape */ $dataPostParam ?>>
+        <?= $block->escapeHtml($block->getLabel()) ?>
+    </a>
+</li>

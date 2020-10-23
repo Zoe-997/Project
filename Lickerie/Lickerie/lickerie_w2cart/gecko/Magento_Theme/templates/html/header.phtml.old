@@ -1,0 +1,73 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var \Magento\Theme\Block\Html\Header $block
+ */
+?>
+<?php 
+ $objectManager = \Magento\Framework\App\ObjectManager::getInstance(); 
+ $customerSession = $objectManager->get('Magento\Customer\Model\SessionFactory')->create();
+?>
+<link href="//fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
+<header class="page-header alothemes">
+    <div class="header">
+		<div class="header-top">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="header-top-left col-lg-4 col-md-4 col-xs-12">
+						<div class="social-profile"><a href="#" class="social-link social-facebook"><i class="fa fa-facebook"><em class="hidden">hidden</em></i></a><a href="#" class="social-link social-twitter"><i class="fa fa-twitter"><em class="hidden">hidden</em></i></a><a href="#" class="social-link social-google"><i class="fa fa-google-plus"><em class="hidden">hidden</em></i></a><a href="#" class="social-link social-instagram"><i class="fa fa-instagram"><em class="hidden">hidden</em></i></a><a href="#" class="social-link social-pinterest"><i class="fa fa-pinterest"><em class="hidden">hidden</em></i></a></div>
+					</div>
+				    
+					<div class="header-top-center col-lg-4 col-md-4 col-xs-12">
+						<div class="typewrite text-effect">
+							<span class="wrap"><?php echo __('The Best Magento Themes.'); ?></span>
+							<span class="typed-cursor">|</span>
+						</div>
+					</div>
+					<div class="header-top-right col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				       <div class="header-top-link">
+							<?php echo $this->getChildHtml('store_language'); ?>
+							<?php echo $this->getChildHtml('currency'); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-content menu-mobile header-sticker">
+			<div class="container-fluid">
+				<div class="row">
+				    <div class="content-logo col-lg-2 col-md-2 col-sm-12">
+						<div class="header-logo">
+							<?php echo $this->getChildHtml('logo'); ?>
+						</div>
+					</div>
+					<div class="header-right-menu col-lg-8 col-md-8 col-sm-12">
+						<?php echo $this->getChildHtml('navigation.sections'); ?>
+						<?php echo $this->getChildHtml('catalog.topnav'); ?>
+					</div>
+					<div class="content-cart col-lg-2 col-md-2 col-sm-12">
+						<div class="tool-header">
+							<div class="search-area header-search">
+								<?php echo $this->getChildHtml('top.search'); ?>
+							</div>
+							<div class="header-top-link">
+								<?php echo $this->getChildHtml('header.customlinks'); ?>
+							</div>
+							<?php echo $this->getChildHtml('minicart'); ?>
+							<span data-action="toggle-nav" class="action nav-toggle"><span><?php /* @escapeNotVerified */ echo __('Toggle Nav') ?></span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

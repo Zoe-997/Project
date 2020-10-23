@@ -1,0 +1,95 @@
+@media (max-width: 1070px) {
+
+}
+@media (max-width: 991px) {
+.shop-icon-sec .col-md-4 {width:33.33%; float:left;}
+.shopping-promos {width:90%;}
+.shopping-promos .promo1, .shopping-promos .promo2, .shopping-promos .promo3, .shopping-promos .promo4 {width:50%; float:left;}
+}
+@media (max-width: 800px) {
+.shop-by-room ul li {width:50%;}
+}
+@media (max-width: 768px) {
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {width: 100%; float: left;}
+.shop-icon-sec .col-md-4 {width:50%; float:none; margin:0 auto;}
+.footer .ns-wrap {border-left:0;}
+.home-promo-sec .col-md-6 {margin-bottom:10px;}
+.shopping-promos .promo1, .shopping-promos .promo2, .shopping-promos .promo3, .shopping-promos .promo4 {width:100%; float:left;}
+.order-shipping .order-wrap {width:100%; border-right:0; border-bottom:1px solid #edeff1;}
+.order-shipping .shipping-wrap {width:100%;}
+.usefull-links .shopping, .usefull-links .print {margin-bottom:15px;}
+.question-wrap ul li:first-child {width:100%; border-bottom:1px solid #edeff1;}
+.question-wrap ul li:last-child {width:100%;}
+}
+@media (max-width: 650px) {
+.shop-icon-sec .col-md-4 {width:70%; float:none; margin:0 auto;}
+}
+
+@media (max-width: 540px) {
+
+}
+@media (max-width: 430px) {
+.shop-icon-sec .col-md-4 {width:100%; float:none; margin:0 auto;display: inline-block;padding-bottom: 18px;}
+}
+@media only screen and (max-width: 771px){
+	.skip-links {
+		width: 100%;
+		float:none;
+	}
+	.header_menu_wrap {
+		width: 100%;
+	}
+	#header-nav {
+		float: none;
+	}
+	a.logo img {
+		height: auto;
+	}
+	.header_menu_wrap
+	{
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (min-width: 771px){
+	#header-search {
+		display: block;
+		max-width: 45px;
+		max-height: 38px;
+		padding: 0;
+		float: left;
+		position: absolute;
+		right:15px;
+		background: #000;
+		top: 20px;
+	}
+	div#header-search:hover {
+		max-width: 295px;
+		z-index: 99999999;
+		transition: all 0.5s ease;
+	}
+	div#header-search:hover input {
+		border: 2px solid #f171a2;
+	}
+}
+@media only screen and (max-width: 960px) and (min-width: 480px){
+	.products-grid > li {
+		width: 28.5%;
+	}
+}
+@media only screen and (max-width: 480px){
+	.products-grid > li {
+		width: 43.3%;
+	}
+	.home-content-sec .col-md-6:first-child {
+		padding-bottom: 25px;
+	}
+}
+@media only screen and (max-width: 328px){
+	.products-grid > li {
+		width: 93%;
+	}
+}

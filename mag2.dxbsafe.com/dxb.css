@@ -1,0 +1,19 @@
+/*
+#############################################
+Custom CSS for Dxbsafe
+@USER - Razavi
+#############################################
+*/
+
+.magicproduct {
+    margin-top: 0 !important;
+}
+
+/* zoetrinh dev */
+.minicart-wrapper .action.showcart .counter.qty .counter-number:empty:before{
+  content:"0";
+  color:#fff;
+}
+.minicart-wrapper .minicart-text span[data-bind]:empty:before{
+  content:"0.00";
+}
