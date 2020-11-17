@@ -42,3 +42,16 @@ Admin Panel > CONTENT > pages > page
 Admin Panel > CONTENT > configuration> page
 
 If you could please do the work over night tonight and let me know its done when I sign on tomorrow morning
+
+
+
+26/10/2020:
+ftp.gpsoutlet.co.uk
+port 22
+gpsoutlet
+aloteam@123
+
+https://www.gpsoutlet.co.uk/admin
+aloteam/aloteam@123
+
+https://gtmetrix.com/reports/gpsoutlet.co.uk/u2qANbHn

@@ -30,3 +30,12 @@ xml:
 port: 18765
 user: gener717
 pass: aloteam@123
+
+
+13/11/2020:
+35.214.63.253
+port: 18765
+u3-2wu4ncbhh533
+duongquyet90
+
+/home/customer/www/general-healthcare.com/public_html
