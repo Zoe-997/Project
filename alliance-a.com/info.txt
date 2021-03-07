@@ -1,0 +1,19 @@
+https://www.alliance-a.com/backend-admin/
+user: Eric
+pw: Sdt6778yyyyyy
+
+
+host: 45.32.76.78
+user: comalliance
+pass: file key
+
+
+https://www.alliance-a.com/
+
+
+/home/comalliance/public_html
+
+
+https://www.advanced-a.com/:
+color-hover-button: #b3c7de, linear-gradient(0deg, #b3c7de 0%, #b3c7de 100%);
+border-color:#ff5722

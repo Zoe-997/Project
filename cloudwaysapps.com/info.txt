@@ -6,3 +6,24 @@ Pass: Alomilano123
 now its okLogin Magento
 User: alomilano
 Pass: Alomilano123
+
+https://magento-518936-1650268.cloudwaysapps.com/
+1/3/2021:
+SSH: 68.183.108.129
+User: alotheme
+Pass: Alotheme123
+
+--
+
+DBName: pxnpgwasyn
+User: pxnpgwasyn
+Pass: S22A6XQbgP
+
+--
+
+Admin: https://magento-518936-1650268.cloudwaysapps.com/admin
+User: alomilano
+Pass: Alotheme12345@-
+
+home_06
+header_default

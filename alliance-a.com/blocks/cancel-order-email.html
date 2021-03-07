@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        {{var template_styles|raw}}
+
+        {{css file="css/email.css"}}
+    </style>
+</head>
+<body>
+{{inlinecss file="css/email-inline.css"}}
+
+<div class="cancel-order-title">
+    <h2 class="title">Order Cancelation</h2>
+    <p class="order-id">Order {{trans "order # %increment_id" increment_id=$data.increment_id}}</p>
+</div>
+<div class="cancel-order-content">
+    <div class="content-item">
+        <h2 class="title">Hello {{trans "Customer Name:"}},</h2>
+        <p class="text">We're writing to let you know that your order has been successfuly canceled. In most cases, you pay for items when ship them to you, so you won't be charged for items that are canceled *.</p>
+    </div>
+    <div class="content-item">
+        <h2 class="title">Order Detail</h2>
+        <p class="order-id">Order {{trans "order # %increment_id" increment_id=$data.increment_id}}</p>
+        <p class="text">Placed on </p>
+        <div class="order-items">
+            <div class="order-item">
+                <div class="item-img"></div>
+                <div class="item-detail">
+                    <div class="product-name"></div>
+                    <div class="sold-by">
+                        <label class="label">sold by</label>
+                        <div class="text"></div>
+                    </div>
+                    <div class="cancel-reason">
+                        <label class="label">Cancel Reason</label>
+                        <div class="text"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

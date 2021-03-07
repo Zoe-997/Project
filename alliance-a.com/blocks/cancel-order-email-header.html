@@ -1,0 +1,41 @@
+<div class="header">
+    <a class="logo" href="{{store url=''}}">
+        <img {{if logo_width}} width="{{var logo_width}}" {{else}} width="180" {{/if}} {{if logo_height}} height="{{var logo_height}}" {{/if}} src="{{var logo_url}}" alt="{{var logo_alt}}" border="0"
+        />
+    </a>
+    <div class="email-header-links">
+        <ul>
+            <li><a href="{{store url='sales/order/history'}}">Your Order</a></li>
+            <li><a href="{{store url='customer/account'}}">Your Account</a></li>
+            <li><a href="{{store url=''}}">alliance-a.com</a></li>
+        </ul>
+    </div>
+</div>
+
+<style type="text/css">
+    .header .logo{
+        width: 100px;
+        display: inline-block;
+    }
+    .header .email-header-links{
+        display:inline-block;
+        width: calc(100% - 100px - 10px);
+        text-align: right;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #dfdfdf;
+    }
+    .header .email-header-links ul{
+        list-style-type: none;
+    }
+    .header .email-header-links ul li{
+        display: inline-block;
+    }
+    .header .email-header-links ul li:not(:last-child),
+    .header .email-header-links ul li:not(:first-child){
+        margin: 0 5px;
+        padding: 0 5px;
+        border-width: 0 1px;
+        border-style: solid;
+        border-color: #dfdfdf;
+    }
+</style>
